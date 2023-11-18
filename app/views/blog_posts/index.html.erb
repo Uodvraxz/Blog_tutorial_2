@@ -2,6 +2,11 @@
 <% @blog_posts.each do |blog_post| %>
   <div>
     <h2><%= link_to blog_post.title, blog_post %> </h2>
-    <p><%= blog_post.body %> </p>
+     <p><%= blog_post.body %> </p>
+     <%if blog_post.draft?%>
+      <div class="text-xs bg-indigo-200 rounded p-2">
+        Draft
+      </div>
+     <%end%>
   </div>
 <% end %>
