@@ -7,6 +7,10 @@
       <div class="text-xs bg-indigo-200 rounded p-2">
         Draft
       </div>
+      <%elsif blog_post.scheduled?%>
+      <div class="text-xs bg-lime-200 rounded p-2">
+        Scheduled
+      </div>
      <%end%>
   </div>
 <% end %>
