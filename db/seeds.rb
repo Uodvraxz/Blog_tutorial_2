@@ -7,3 +7,8 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+require 'faker'
+
+100.times do
+  BlogPost.create(title: Faker::Lorem.sentence, content: Faker::Lorem.paragraph, published_at: Faker::Date.between(from: 1.year.ago, to: 1.year.from_now))
+end

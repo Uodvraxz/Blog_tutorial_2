@@ -72,3 +72,7 @@ gem "devise", "~> 4.9"
 gem "tailwindcss-rails", "~> 2.0"
 
 gem "aws-sdk-s3", "~> 1.137", require: false
+
+gem "faker", "~> 3.2"
+
+gem "pagy", "~> 6.2"
